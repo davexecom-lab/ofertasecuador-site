@@ -1,0 +1,68 @@
+:root{--blue:#0b3d91;--blue2:#123f86;--yellow:#ffd100;--red:#d52b1e;--ink:#14213d;--muted:#5b6475;--bg:#ffffff;--soft:#f4f6fb;--line:#e3e7ef;--wa:#1fa855}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:var(--blue)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+.topbar{background:var(--blue);color:#fff;text-align:center;font-size:14px;padding:8px 16px;font-weight:600}
+.header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+.header-in{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:19px}
+.logo b{color:var(--blue)}
+.logo-mark{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:9px;background:var(--blue);color:var(--yellow);font-weight:800;font-size:15px}
+.logo.light{color:#fff}.logo.light b{color:var(--yellow)}
+.nav{display:flex;gap:22px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px}
+.nav a:hover{color:var(--blue)}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;text-align:center}
+.btn.sm{padding:9px 16px;font-size:14px}
+.btn-wa{background:var(--wa);color:#fff}.btn-wa:hover{filter:brightness(.95)}
+.btn-ghost{border:2px solid var(--blue);color:var(--blue)}
+.hero{background:linear-gradient(180deg,#eef3fc,#fff);padding:56px 0}
+.hero-in{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.eyebrow{color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:13px;margin:0 0 8px}
+h1{font-size:40px;line-height:1.15;margin:0 0 16px}
+h2{font-size:28px;margin:0 0 8px}
+.lead{font-size:18px;color:var(--muted);margin:0 0 24px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.trust li{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.trust .ic{font-size:26px}
+.trust small,.cat small{display:block;color:var(--muted)}
+.section{padding:56px 0}
+.section.alt{background:var(--soft)}
+.sub{color:var(--muted);margin:0 0 24px}
+.grid.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cat{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.cat:hover{border-color:var(--blue)}
+.cat span{font-size:30px;display:block;margin-bottom:8px}
+.steps{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.steps li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+.steps p{margin:6px 0 0;color:var(--muted);font-size:15px}
+details{border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px;background:#fff}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--muted);margin:10px 0 0}
+.contact-band{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.contact-band p{margin:0;color:var(--muted)}
+.footer{background:var(--ink);color:#cfd6e4;padding:44px 0 20px;font-size:15px}
+.foot-in{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.footer h4{color:#fff;margin:0 0 10px}
+.footer a,.footer span{display:block;color:#cfd6e4;text-decoration:none;margin-bottom:6px}
+.footer a:hover{color:#fff}
+.copy{text-align:center;margin:30px 0 0;font-size:13px;color:#8d97ab}
+.page{padding:44px 0 60px}
+.page h1{font-size:32px}
+.page h2{font-size:21px;margin-top:28px}
+.page p,.page li{color:#3a4356}
+.updated{color:var(--muted);font-size:14px}
+@media (max-width:860px){
+  .hero-in{grid-template-columns:1fr}
+  h1{font-size:30px}
+  .grid.cats{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr 1fr}
+  .foot-in{grid-template-columns:1fr}
+  .nav{display:none}
+  .header-in .btn{margin-left:auto}
+}
+@media (max-width:480px){.steps{grid-template-columns:1fr}.grid.cats{grid-template-columns:1fr 1fr}}

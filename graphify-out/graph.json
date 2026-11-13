@@ -1,0 +1,122 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "build.py",
+      "file_type": "code",
+      "source_file": "build.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "build",
+      "community": 0,
+      "norm_label": "build.py"
+    },
+    {
+      "label": "wa()",
+      "file_type": "code",
+      "source_file": "build.py",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "build_wa",
+      "community": 0,
+      "norm_label": "wa()"
+    },
+    {
+      "label": "ico()",
+      "file_type": "code",
+      "source_file": "build.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "build_ico",
+      "community": 0,
+      "norm_label": "ico()"
+    },
+    {
+      "label": "head()",
+      "file_type": "code",
+      "source_file": "build.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "build_head",
+      "community": 0,
+      "norm_label": "head()"
+    },
+    {
+      "label": "Genera el sitio est\u00e1tico de Ofertas Ecuador. Uso: python3 build.py",
+      "file_type": "rationale",
+      "source_file": "build.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "build_rationale_1",
+      "community": 0,
+      "norm_label": "genera el sitio estatico de ofertas ecuador. uso: python3 build.py"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "build.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "build",
+      "target": "build_head",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "build.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "build",
+      "target": "build_ico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "build.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "build",
+      "target": "build_wa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "build.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "build_rationale_1",
+      "target": "build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "build.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "build_head",
+      "target": "build_wa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "build.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "build_head",
+      "target": "build_ico",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
